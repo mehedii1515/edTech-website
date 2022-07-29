@@ -1,0 +1,117 @@
+/* google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@700&display=swap');
+
+/* utilities */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    color: #777777;
+}
+
+.bg-1 {
+    background-color: #F4FAFD;
+}
+
+/* custom css */
+.All_courses,
+.institute,
+.join_area,
+.successfull,
+.students_feedback,
+.faq,
+.companies,
+footer {
+    margin-top: 130px;
+}
+
+
+.carousel-img {
+    height: 90vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    left: 15%;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.filled {
+    color: gold;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #bf6969;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    border: 0;
+
+}
+
+.carousel-item1::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    opacity: .5;
+    background: #1D1D1D;
+}
+
+/* mobile view */
+@media only screen and (max-width: 576px) {
+
+    .carousel-indicators {
+        bottom: -16px;
+    }
+
+    .carousel-caption {
+        top: 190px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption p {
+        font-size: 11px;
+    }
+}
+
+
+/* modile view */
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    .carousel-caption {
+        top: 18px;
+    }
+
+    .carousel-img {
+        height: 100vh;
+    }
+}
